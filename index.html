@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ViniciosRagazzi - Portfólio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
@@ -21,8 +22,7 @@
 
     </div>
     <i class="fas circle fa-circle"></i>
-    <i onclick="fecharMenu()" class="fas fechar fa-times-circle"></i>
-    <i onclick="abrirMenu()" class="fas bar fa-bars"></i>
+
 </header>
 
 <div class="div-t" >
@@ -45,27 +45,27 @@
                     </h3>
                     <ul class="menu-ul">
                         <li class="menu-li">
-                            <a href="" class="menu-a">
-                                <span>1-</span> Inicio
+                            <a href="#skills" class="menu-a">
+                                <span>1-</span> Skills
                             </a>
                         </li>
                         <li class="menu-li">
-                            <a href="" class="menu-a">
+                            <a href="#projetos" class="menu-a">
                                 <span>2-</span> Projetos
                             </a>
                         </li>
                         <li class="menu-li">
-                            <a href="" class="menu-a">
+                            <a href="#contato" class="menu-a">
                                 <span>3-</span> Contato
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="icon col-lg-6 col-md-12">
-                    <a href=""><i  class="fab fa-github"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/viniciosragazzi/" target="_blank"><i  class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/mvragazzi" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ragazzy4/"  target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/vinicios.ragazzi.750"  target="_blank"><i class="fab fa-facebook-f"></i></a>
                   
                   
                                    
@@ -73,15 +73,20 @@
             </div>
             <div class="player mr-5 ">
                
-                <img src="imagens/pause.png" alt="">
-                <img src="imagens/stop.png" alt="">
+                <img src="imagens/pause.png" onclick="pauseaudio()" alt="">
+                <img src="imagens/stop.png" onclick="pararaudio()" alt="">
                 
-                <img class="volume" src="imagens/volume-1.png" alt="">
+                <img class="volume" src="imagens/volume-1.png" onclick="mutaraudio()" alt="">
+               
+               
+                    
+    
+                
 
             </div>
         </div>
         <div class="rside col-lg-5 col-md-5">
-            <div class="skills">
+            <div id="skills" class="skills mb-5">
                
                 <h1>Skills</h1>
 
@@ -131,6 +136,54 @@
 
 
                 
+            </div>
+            <div id="projetos" class="projetos mt-5">
+                <h1>Projetos</h1>
+                <div class="projeto1 projeto-box">
+                    <p class="nome-projeto pb-1 pl-3 pt-2">
+                        {Tela de Login/Registro + Tela Menu}.Valorant
+                    </p>
+                    <p class="links-projeto pl-4 ">
+                        <i class="fab fa-github-alt"></i> <a href="https://github.com/viniciosragazzi/Tela-Inicial---Valorant" target="_blank">Arquivos do projeto no github</a> <br>
+                        <i class="fas fa-at"></i> <a href="https://viniciosragazzi.github.io/Tela-Inicial---Valorant/" target="_blank">Site com o projeto hospedado</a>
+                    </p>
+                </div>
+                <div class="projeto2 projeto-box">
+                    <p class="nome-projeto pb-1 pl-3 pt-2">
+                        {FrontEnd - Site para serviços Pet Versão 1}
+                    </p>
+                    <p class="links-projeto pl-4 ">
+                        <i class="fab fa-github-alt"></i> <a href="https://github.com/viniciosragazzi/Front-End-Pet" target="_blank">Arquivos do projeto no github</a> <br>
+                        <i class="fas fa-at"></i> <a href="https://viniciosragazzi.github.io/Front-End-Pet/" target="_blank">Site com o projeto hospedado</a>
+                    </p>
+                </div>
+                <div class="projeto3 projeto-box">
+                    <p class="nome-projeto pb-1 pl-3 pt-2">
+                        {FrontEnd - Site para serviços Pet Versão 2}
+                    </p>
+                    <p class="links-projeto pl-4 ">
+                        <i class="fab fa-github-alt"></i> <a href="https://github.com/viniciosragazzi/Pet-Front-2" target="_blank">Arquivos do projeto no github</a> <br>
+                        <i class="fas fa-at"></i> <a href="https://viniciosragazzi.github.io/Pet-Front-2/" target="_blank">Site com o projeto hospedado</a>
+                    </p>
+                </div>
+                <p class="disabled ver">Ver mais...</p>
+            </div>
+            <div id="contato" class="contato mt-5">
+                <h1>Contato</h1>`
+                <div class="row">
+                    
+                   
+                    <div class="box-contato ml-3 mr-2 col-4 mt-2">
+                            <a href="https://api.whatsapp.com/send?phone=5521980534112&text=Ol%C3%A1%2C%20em%20breve%20responderei%20sua%20mensagem!"  target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+                    </div>
+                    <div class="box-contato col-4 mt-2">
+                        <a href="https://www.facebook.com/vinicios.ragazzi.750"  target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="box-contato ml-3 col-4 mt-2">
+                        <a href="https://www.instagram.com/ragazzy4/"  target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                </div>
             </div>
             
         </div>

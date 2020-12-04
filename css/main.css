@@ -7,6 +7,23 @@
   font-family: 'Fira Code';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #56f0b0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6ece5875;
+}
+
 :root {
   --cor-fundo: #0c0e14;
   --cor-lateral: #17191e;
@@ -375,6 +392,93 @@ body .area-total .rside .skills .area1 a.projetos {
   color: white;
 }
 
+body .area-total .rside .projetos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: start;
+}
+
+body .area-total .rside .projetos p.ver {
+  color: var(--cor-icons);
+  cursor: pointer;
+}
+
+body .area-total .rside .projetos .projeto-box {
+  background-color: var(--cor-lateral);
+  margin-bottom: 15px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+body .area-total .rside .projetos .projeto-box:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 8px -5px var(--cor-icons);
+          box-shadow: 0px 3px 8px -5px var(--cor-icons);
+}
+
+body .area-total .rside .projetos .projeto-box .nome-projeto {
+  border-left: 3px solid var(--cor-icons);
+}
+
+body .area-total .rside .projetos .projeto-box .links-projeto i {
+  color: var(--cor-icons);
+}
+
+body .area-total .rside .projetos .projeto-box .links-projeto a {
+  color: white;
+}
+
+body .area-total .rside .projetos .projeto-box .links-projeto a:hover {
+  color: var(--cor-icons);
+}
+
+body .area-total .rside .contato .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .area-total .rside .contato .row .box-contato {
+  height: 60px;
+  background-color: var(--cor-lateral);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+}
+
+body .area-total .rside .contato .row .box-contato a {
+  color: var(--cor-icons);
+}
+
+body .area-total .rside .contato .row .box-contato a i {
+  font-size: 35px;
+}
+
+body .area-total .rside .contato .row .box-contato a:hover i {
+  font-size: 30px;
+}
+
 @media (max-width: 767px) {
   body .area-total .rside .inicio .area1 {
     display: block;
@@ -401,9 +505,6 @@ body .area-total .rside .skills .area1 a.projetos {
     display: none;
   }
   body header i.circle {
-    display: none;
-  }
-  body header i.bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
