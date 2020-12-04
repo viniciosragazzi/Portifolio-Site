@@ -249,28 +249,28 @@ body{
                             &.html{
                                 span{
                                      
-                                         width: 75%;
+                                         width: 100%;
                                      
                                 }
                              }
                              &.scss{
                                  span{
                                     
-                                         width: 65%;
+                                         width: 100%;
                                      
                                 }
                              }
                              &.bootstrap{
                                  span{
                                      
-                                         width: 55%;
+                                         width: 100%;
                                      
                                 }
                              }
                              &.js{
                                  span{
                                      
-                                         width: 55%;
+                                         width: 100%;
                                      
                                 }
                              }
@@ -285,20 +285,7 @@ body{
                                 animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
                                 
 
-                                &::before{
-                                    position: absolute;
-                                    content: "";
-                                    height: 0;
-                                    width: 0;
-                                    right: 0;
-                                    margin-top: -10px;
-                                    border: 7px solid transparent;
-                                    border-bottom-width:0px ;
-                                    border-right-width: 0px;
-                                    border-top-color:rgb(0, 0, 0) ;
-                                    opacity: 0;
-                                    animation: showText2 0.5s 1.5s linear forwards;
-                                }
+                                
                                 &::after{
                                     position: absolute;
                                     
@@ -314,34 +301,7 @@ body{
                                     animation: showText2 0.5s 1.5s linear forwards;
                                 }
                             }
-                            &.html{
-                               span{
-                                    &::after{
-                                        content: "75%";
-                                    }
-                               }
-                            }
-                            &.scss{
-                                span{
-                                    &::after{
-                                        content: "65%";
-                                    }
-                               }
-                            }
-                            &.bootstrap{
-                                span{
-                                    &::after{
-                                        content: "55%";
-                                    }
-                               }
-                            }
-                            &.js{
-                                span{
-                                    &::after{
-                                        content: "55%";
-                                    }
-                               }
-                            }
+                            
                             
                              
                         }

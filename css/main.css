@@ -299,19 +299,19 @@ body .area-total .rside .skills .area1 .bar .progress-line {
 }
 
 body .area-total .rside .skills .area1 .bar .progress-line.html span {
-  width: 75%;
+  width: 100%;
 }
 
 body .area-total .rside .skills .area1 .bar .progress-line.scss span {
-  width: 65%;
+  width: 100%;
 }
 
 body .area-total .rside .skills .area1 .bar .progress-line.bootstrap span {
-  width: 55%;
+  width: 100%;
 }
 
 body .area-total .rside .skills .area1 .bar .progress-line.js span {
-  width: 55%;
+  width: 100%;
 }
 
 body .area-total .rside .skills .area1 .bar .progress-line span {
@@ -327,22 +327,6 @@ body .area-total .rside .skills .area1 .bar .progress-line span {
           animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-body .area-total .rside .skills .area1 .bar .progress-line span::before {
-  position: absolute;
-  content: "";
-  height: 0;
-  width: 0;
-  right: 0;
-  margin-top: -10px;
-  border: 7px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  border-top-color: black;
-  opacity: 0;
-  -webkit-animation: showText2 0.5s 1.5s linear forwards;
-          animation: showText2 0.5s 1.5s linear forwards;
-}
-
 body .area-total .rside .skills .area1 .bar .progress-line span::after {
   position: absolute;
   background-color: var(--cor-fundo);
@@ -356,22 +340,6 @@ body .area-total .rside .skills .area1 .bar .progress-line span::after {
   opacity: 0;
   -webkit-animation: showText2 0.5s 1.5s linear forwards;
           animation: showText2 0.5s 1.5s linear forwards;
-}
-
-body .area-total .rside .skills .area1 .bar .progress-line.html span::after {
-  content: "75%";
-}
-
-body .area-total .rside .skills .area1 .bar .progress-line.scss span::after {
-  content: "65%";
-}
-
-body .area-total .rside .skills .area1 .bar .progress-line.bootstrap span::after {
-  content: "55%";
-}
-
-body .area-total .rside .skills .area1 .bar .progress-line.js span::after {
-  content: "55%";
 }
 
 body .area-total .rside .skills .area1 h2 {
