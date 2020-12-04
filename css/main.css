@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fira Code';
+}
+
+:root {
+  --cor-fundo: #0c0e14;
+  --cor-lateral: #17191e;
+  --cor-titulos: #a9ff95;
+  --cor-icons: #a9ff95;
+  --cor-cards:#
+
+;
+}
+
+h1, h3, p, header {
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  overflow-x: hidden;
+}
+
+body header {
+  width: 100%;
+  height: 50px;
+  background-color: #040105;
+  margin-bottom: 15px;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .player {
+  line-height: 50px;
+  display: none;
+}
+
+body header .player img {
+  width: 28px;
+}
+
+body header .player img:hover {
+  width: 20px;
+  cursor: pointer;
+}
+
+body header p {
+  color: white;
+  line-height: 50px;
+  padding-left: 5px;
+}
+
+body header i {
+  color: var(--cor-icons);
+  font-size: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 5px;
+  cursor: pointer;
+}
+
+body header i.circle {
+  font-size: 15px;
+  line-height: 40px;
+}
+
+body header i.bar {
+  display: none;
+  line-height: 40px;
+}
+
+body header i.fechar {
+  display: none;
+  line-height: 40px;
+}
+
+body .area-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .area-total .lside {
+  z-index: 997;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  margin-left: 25px;
+  overflow: hidden;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+body .area-total .lside .about {
+  margin-bottom: 15px;
+  overflow: hidden;
+  max-width: 680px;
+}
+
+body .area-total .lside .about .card {
+  background-color: #0c0911;
+  padding: 10px;
+}
+
+body .area-total .lside .about .card .card-body .card-title {
+  color: var(--cor-titulos);
+}
+
+body .area-total .lside .about .card .card-body .card-text {
+  color: white;
+}
+
+body .area-total .lside .about .card .card-body .card-text span {
+  color: var(--cor-icons);
+}
+
+body .area-total .lside .menu-icon {
+  text-align: center;
+}
+
+body .area-total .lside .menu-icon .menu {
+  background-color: #0c0911;
+  border-radius: 50px;
+  max-width: 300px;
+}
+
+body .area-total .lside .menu-icon .menu h3 {
+  color: white;
+}
+
+body .area-total .lside .menu-icon .menu ul li {
+  list-style: none;
+}
+
+body .area-total .lside .menu-icon .menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+body .area-total .lside .menu-icon .menu ul li a span {
+  color: var(--cor-icons);
+}
+
+body .area-total .lside .menu-icon .menu ul li a:hover {
+  color: var(--cor-icons);
+  font-size: 15px;
+}
+
+body .area-total .lside .menu-icon .icon {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 15px;
+}
+
+body .area-total .lside .menu-icon .icon i {
+  font-size: 35px;
+  color: var(--cor-icons);
+  padding: 5px;
+}
+
+body .area-total .lside .menu-icon .icon i:hover {
+  text-shadow: 0px 0px 7px #147e52;
+  font-size: 33px;
+}
+
+body .area-total .lside .player {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 20px;
+}
+
+body .area-total .lside .player img.volume:hover {
+  width: 28px;
+  cursor: pointer;
+}
+
+body .area-total .lside .player img:hover {
+  width: 43px;
+  cursor: pointer;
+}
+
+body .area-total .rside {
+  margin-left: 46%;
+  padding: 28px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .area-total .rside h1 {
+  color: var(--cor-titulos);
+}
+
+body .area-total .rside p {
+  color: white;
+}
+
+body .area-total .rside .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: start;
+}
+
+body .area-total .rside .skills .area1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px 30px;
+  background-color: var(--cor-lateral);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+body .area-total .rside .skills .area1 .bar {
+  margin-right: 20px 0;
+}
+
+body .area-total .rside .skills .area1 .bar:first-child {
+  margin-top: 0;
+}
+
+body .area-total .rside .skills .area1 .bar .info {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+body .area-total .rside .skills .area1 .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  opacity: 0;
+  -webkit-animation: showText2 0.5s 1s linear forwards;
+          animation: showText2 0.5s 1s linear forwards;
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(9, 216, 199, 0.8);
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(9, 216, 199, 0.8);
+  position: relative;
+  border-radius: 10px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+          animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line.html span {
+  width: 75%;
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line.scss span {
+  width: 65%;
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line.bootstrap span {
+  width: 55%;
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line.js span {
+  width: 55%;
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line span {
+  height: 100%;
+  background-color: var(--cor-icons);
+  position: absolute;
+  border-radius: 10px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+          animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  right: 0;
+  margin-top: -10px;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: black;
+  opacity: 0;
+  -webkit-animation: showText2 0.5s 1.5s linear forwards;
+          animation: showText2 0.5s 1.5s linear forwards;
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line span::after {
+  position: absolute;
+  background-color: var(--cor-fundo);
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 3px;
+  right: 0;
+  margin-top: -28px;
+  opacity: 0;
+  -webkit-animation: showText2 0.5s 1.5s linear forwards;
+          animation: showText2 0.5s 1.5s linear forwards;
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line.html span::after {
+  content: "75%";
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line.scss span::after {
+  content: "65%";
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line.bootstrap span::after {
+  content: "55%";
+}
+
+body .area-total .rside .skills .area1 .bar .progress-line.js span::after {
+  content: "55%";
+}
+
+body .area-total .rside .skills .area1 h2 {
+  color: #21c581;
+}
+
+body .area-total .rside .skills .area1 h4 {
+  color: #01b991;
+}
+
+body .area-total .rside .skills .area1 a.baixar {
+  background-color: #13aa6b;
+  color: white;
+}
+
+body .area-total .rside .skills .area1 a.projetos {
+  background-color: #13aa89;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  body .area-total .rside .inicio .area1 {
+    display: block;
+  }
+  body .area-total .lside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    margin-left: 0;
+  }
+  body .area-total .rside {
+    margin-left: 0%;
+    margin-top: 50px;
+  }
+  body .area-total .lside .menu-icon .menu {
+    max-width: 999px;
+  }
+  body .area-total .lside .player {
+    display: none;
+  }
+  body header i.circle {
+    display: none;
+  }
+  body header i.bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .area-total .rside {
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  body .area-total .lside {
+    -webkit-transform: translateY(-750px);
+            transform: translateY(-750px);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    position: absolute;
+    margin-left: 56px;
+  }
+  body header .player {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  body .area-total .lside .menu-icon .icon {
+    right: 106px;
+  }
+  body .area-total .lside .player {
+    position: relative;
+    right: 92px;
+  }
+}
+
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
