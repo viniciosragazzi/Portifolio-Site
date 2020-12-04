@@ -4,13 +4,15 @@ let fechar = document.querySelector(".fechar")
 let bar = document.querySelector(".bar")
 function abrirMenu(){
     lside.style.position = "relative"
+    lside.style.display = "flex"
     lside.style.transform = "translateY(0)"
     bar.style.display = "none"
     fechar.style.display = "flex"
 }
 function fecharMenu(){
     lside.style.position = "absolute"
-    lside.style.transform = "translateY(-750px)"
+    lside.style.transform = "translateY(-950px)"
+    lside.style.display = "none"
     bar.style.display = "flex"
     fechar.style.display = "none"
 }
@@ -21,7 +23,7 @@ function tamanhoTela(){
   
    if(windowWidth <= 768){
     lside.style.position = "absolute"
-    lside.style.transform = "translateY(-850px)"
+    lside.style.transform = "translateY(-950px)"
     bar.style.display = "flex"
     fechar.style.display = "none"
     divt.classList.add("container")
