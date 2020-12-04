@@ -20,7 +20,7 @@ function fecharMenu(){
 
 function tamanhoTela(){
     var windowWidth = window.innerWidth;
-  
+   
    if(windowWidth <= 768){
     lside.style.position = "absolute"
     lside.style.transform = "translateY(-950px)"
@@ -33,6 +33,7 @@ function tamanhoTela(){
     bar.style.display = "none"
     fechar.style.display = "none"
     divt.classList.remove("container")
+    lside.style.display = "flex"
     }
   };
   
