@@ -215,8 +215,52 @@ body{
                    border-radius: 5px;
                     margin-bottom: 15px;
                     
+
+                    input{
+                        display: none;
+                        &#check-html:checked + .html-area{
+                            & p{
+                                display: flex;
+                            }
+                            & i{
+                                transform: rotate(180deg);
+                            }
+                        }
+                        &#check-css:checked + .css-area{
+                            & p{
+                                display: flex;
+                            }
+                            & i{
+                                transform: rotate(180deg);
+                            }
+                        }
+                        &#check-bts:checked + .bts-area{
+                            & p{
+                                display: flex;
+                            }
+                            & i{
+                                transform: rotate(180deg);
+                            }
+                        }
+                        &#check-js:checked + .js-area{
+                            & p{
+                                display: block;
+                            }
+                            & i{
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                    
+                    
                     .bar{
                         margin-right: 20px 0;
+                        overflow: hidden;
+                        p{
+                            display: none;
+                            padding-top: 8px;
+                            padding-bottom: 5px;
+                        }
                         &:first-child{
                             margin-top: 0;
                         }
@@ -224,6 +268,15 @@ body{
                         .info{
                             margin-bottom: 10px;
                             margin-top: 10px;
+                            label{
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            i{
+                                color: var(--cor-icons);
+                                transition: transform .3s ease;
+                                
+                            }
                             span{
                                 font-size: 17px;
                                 font-weight: 500;
@@ -435,9 +488,9 @@ body{
         transition: 0.6s;
     }
     body .area-total .lside {
-        transform: translateY(-750px) ;
+        
         transition: 0.2s;
-        position: absolute;
+        position: relative;
         margin-left: 56px;
     } 
     body header .player {
@@ -468,5 +521,11 @@ body{
 @keyframes showText2{
     100%{
         opacity: 1;
+    }
+}
+
+@keyframes aumentaraltura{
+    100%{
+        height: 200px;
     }
 }
