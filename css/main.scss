@@ -359,6 +359,9 @@ body{
 }
 
 @media (max-width:767px){
+    *{
+        overflow: hidden;
+    }
     body .area-total .rside .inicio .area1 {
         display: block;
         
