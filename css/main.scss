@@ -478,7 +478,7 @@ body{
         max-width: 999px;
     }
     body .area-total .lside .player {
-        display: none;
+        display: block;
     }
     body header i.circle {
         display: flex;
@@ -528,4 +528,13 @@ body{
     100%{
         height: 200px;
     }
+}
+.play{
+    display: none;
+}
+.pause{
+    display: inline;
+}
+.desmutar{
+    display: none;
 }
