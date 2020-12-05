@@ -89,16 +89,8 @@ body header i {
 body header i.circle {
   font-size: 15px;
   line-height: 40px;
-}
-
-body header i.bar {
-  display: none;
-  line-height: 40px;
-}
-
-body header i.fechar {
-  display: none;
-  line-height: 40px;
+  -webkit-animation: pulsarCor 3s infinite;
+          animation: pulsarCor 3s infinite;
 }
 
 body .area-total {
@@ -138,10 +130,16 @@ body .area-total .lside .about .card {
 
 body .area-total .lside .about .card .card-body .card-title {
   color: var(--cor-titulos);
+  opacity: 0;
+  -webkit-animation: showText 0.5s linear forwards;
+          animation: showText 0.5s linear forwards;
 }
 
 body .area-total .lside .about .card .card-body .card-text {
   color: white;
+  opacity: 0;
+  -webkit-animation: showText2 0.5s 0.6s linear forwards;
+          animation: showText2 0.5s 0.6s linear forwards;
 }
 
 body .area-total .lside .about .card .card-body .card-text span {
@@ -205,6 +203,18 @@ body .area-total .lside .player {
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: 20px;
+}
+
+body .area-total .lside .player .play {
+  display: inline;
+}
+
+body .area-total .lside .player .pause {
+  display: none;
+}
+
+body .area-total .lside .player .desmutar {
+  display: none;
 }
 
 body .area-total .lside .player img.volume:hover {
@@ -273,6 +283,8 @@ body .area-total .rside .skills .area1 input#check-html:checked + .html-area p {
 body .area-total .rside .skills .area1 input#check-html:checked + .html-area i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-animation: none;
+          animation: none;
 }
 
 body .area-total .rside .skills .area1 input#check-css:checked + .css-area p {
@@ -284,6 +296,8 @@ body .area-total .rside .skills .area1 input#check-css:checked + .css-area p {
 body .area-total .rside .skills .area1 input#check-css:checked + .css-area i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-animation: none;
+          animation: none;
 }
 
 body .area-total .rside .skills .area1 input#check-bts:checked + .bts-area p {
@@ -295,6 +309,8 @@ body .area-total .rside .skills .area1 input#check-bts:checked + .bts-area p {
 body .area-total .rside .skills .area1 input#check-bts:checked + .bts-area i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-animation: none;
+          animation: none;
 }
 
 body .area-total .rside .skills .area1 input#check-js:checked + .js-area p {
@@ -304,6 +320,8 @@ body .area-total .rside .skills .area1 input#check-js:checked + .js-area p {
 body .area-total .rside .skills .area1 input#check-js:checked + .js-area i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-animation: none;
+          animation: none;
 }
 
 body .area-total .rside .skills .area1 .bar {
@@ -333,6 +351,7 @@ body .area-total .rside .skills .area1 .bar .info label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 
 body .area-total .rside .skills .area1 .bar .info i {
@@ -341,6 +360,8 @@ body .area-total .rside .skills .area1 .bar .info i {
   transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
+  -webkit-animation: pulsarCor 1s infinite;
+          animation: pulsarCor 1s infinite;
 }
 
 body .area-total .rside .skills .area1 .bar .info span {
@@ -517,6 +538,30 @@ body .area-total .rside .contato .row .box-contato a:hover i {
   font-size: 30px;
 }
 
+body .area-total .rside footer {
+  width: 100%;
+  height: 60px;
+  background-color: var(--cor-lateral);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .area-total .rside footer p {
+  color: white;
+}
+
+body .area-total .rside footer p span {
+  color: var(--cor-titulos);
+}
+
 @media (max-width: 767px) {
   body .area-total .rside .inicio .area1 {
     display: block;
@@ -622,15 +667,21 @@ body .area-total .rside .contato .row .box-contato a:hover i {
   }
 }
 
-.play {
-  display: inline;
+@-webkit-keyframes pulsarCor {
+  0% {
+    color: var(--cor-icons);
+  }
+  100% {
+    color: #4e9e59;
+  }
 }
 
-.pause {
-  display: none;
-}
-
-.desmutar {
-  display: none;
+@keyframes pulsarCor {
+  0% {
+    color: var(--cor-icons);
+  }
+  100% {
+    color: #4e9e59;
+  }
 }
 /*# sourceMappingURL=main.css.map */

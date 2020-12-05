@@ -74,16 +74,9 @@ body{
             &.circle{
                 font-size: 15px;
                 line-height: 40px;
+                animation: pulsarCor 3s infinite;
             }
-            &.bar{
-                display: none;
-                line-height: 40px;
-
-            }
-            &.fechar{
-                display: none;
-                line-height: 40px;
-            }
+           
         }
     }
     .area-total{
@@ -98,7 +91,7 @@ body{
             overflow: hidden;
             transition: 0.7s;
             transform: translateY(0);
-
+            
             .about{
                 margin-bottom: 15px;
                 overflow: hidden;
@@ -109,9 +102,13 @@ body{
                     .card-body{
                         .card-title{
                             color: var(--cor-titulos);
+                            opacity: 0;
+                            animation: showText 0.5s linear forwards;
                         }
                         .card-text{
                             color: white;
+                            opacity: 0;
+                            animation: showText2 0.5s 0.6s linear forwards;
 
                             span{
                                 color: var(--cor-icons);
@@ -172,7 +169,17 @@ body{
                
                 align-self: center;
               margin-top: 20px;
-
+              .play{
+                display: inline;
+                
+            }
+            .pause{
+                display: none;
+            }
+            .desmutar{
+                display: none;
+            }
+            
                 img{
                     &.volume{
                         &:hover{
@@ -189,6 +196,7 @@ body{
                 }
                 
             }
+            
         }
         .rside{
             margin-left: 46%;
@@ -219,11 +227,14 @@ body{
                     input{
                         display: none;
                         &#check-html:checked + .html-area{
+                            
                             & p{
                                 display: flex;
+                                
                             }
                             & i{
                                 transform: rotate(180deg);
+                                animation: none;
                             }
                         }
                         &#check-css:checked + .css-area{
@@ -232,6 +243,7 @@ body{
                             }
                             & i{
                                 transform: rotate(180deg);
+                                animation: none;
                             }
                         }
                         &#check-bts:checked + .bts-area{
@@ -240,6 +252,7 @@ body{
                             }
                             & i{
                                 transform: rotate(180deg);
+                                animation: none;
                             }
                         }
                         &#check-js:checked + .js-area{
@@ -248,6 +261,7 @@ body{
                             }
                             & i{
                                 transform: rotate(180deg);
+                                animation: none;
                             }
                         }
                     }
@@ -256,10 +270,12 @@ body{
                     .bar{
                         margin-right: 20px 0;
                         overflow: hidden;
+                        
                         p{
                             display: none;
                             padding-top: 8px;
                             padding-bottom: 5px;
+                            
                         }
                         &:first-child{
                             margin-top: 0;
@@ -268,13 +284,16 @@ body{
                         .info{
                             margin-bottom: 10px;
                             margin-top: 10px;
+                            
                             label{
                                 display: flex;
                                 justify-content: space-between;
+                                cursor: pointer;
                             }
                             i{
                                 color: var(--cor-icons);
                                 transition: transform .3s ease;
+                                animation: pulsarCor 1s infinite;
                                 
                             }
                             span{
@@ -448,6 +467,22 @@ body{
                     }
                 }
             }
+            footer{
+                width: 100%;
+                height: 60px;
+                background-color: var(--cor-lateral);
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    color: white;
+                    
+                    span{
+                        color: var(--cor-titulos);
+                    }
+                }
+            }
         }
 
     }
@@ -529,13 +564,13 @@ body{
         height: 200px;
     }
 }
-.play{
-    display: inline;
-    
+
+@keyframes pulsarCor{
+    0%{
+        color: var(--cor-icons);
+    }
+    100%{
+        color:#4e9e59 ;
+    }
 }
-.pause{
-    display: none;
-}
-.desmutar{
-    display: none;
-}
+
