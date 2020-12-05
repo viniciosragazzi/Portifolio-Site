@@ -530,10 +530,11 @@ body{
     }
 }
 .play{
-    display: none;
+    display: inline;
+    
 }
 .pause{
-    display: inline;
+    display: none;
 }
 .desmutar{
     display: none;

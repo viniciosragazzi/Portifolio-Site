@@ -623,11 +623,11 @@ body .area-total .rside .contato .row .box-contato a:hover i {
 }
 
 .play {
-  display: none;
+  display: inline;
 }
 
 .pause {
-  display: inline;
+  display: none;
 }
 
 .desmutar {
