@@ -3,7 +3,9 @@ let playA = document.querySelector(".play");
 let pauseA = document.querySelector(".pause");
 let mutarA = document.querySelector(".mutar");
 let desmutarA = document.querySelector(".desmutar");
+let horaTela = document.querySelector(".hora")
 x.volume = "0.1" 
+x.play();
 function playAudio() { 
   x.play(); 
     playA.style.display = "none"
@@ -33,3 +35,24 @@ function desmutaraudio(){
     mutarA.style.display = "inline"
     desmutarA.style.display = "none"
 }
+
+function Relogio(){
+    let data = new Date();
+    let hr = data.getHours();
+    let min = data.getMinutes();
+    let seg = data.getSeconds();
+
+    let dn = ""
+
+    if(hr<=12){
+         dn = "AM"
+    }else{
+         dn = "PM"
+    }
+   
+    let hora = hr + ":" + min + ":" + seg + dn;
+    
+    horaTela.innerHTML = hora;
+}
+
+setInterval(Relogio,500)
